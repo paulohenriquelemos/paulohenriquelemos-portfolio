@@ -48,15 +48,16 @@ export function Trabalhos() {
                     <p>{work.description}</p>
                   </div>
                   <ul className="relative z-10 mt-6 inline-flex flex-wrap justify-end md:group-even:justify-start gap-5">
-                    <li className="text-text-light text-sm font-mono whitespace-nowrap">
-                      React
-                    </li>
-                    <li className="text-text-light text-sm font-mono whitespace-nowrap">
-                      WordPress
-                    </li>
-                    <li className="text-text-light text-sm font-mono whitespace-nowrap">
-                      API
-                    </li>
+                    {work.topics.map((topic) => {
+                      return (
+                        <li
+                          key={topic}
+                          className="text-text-light text-sm font-mono whitespace-nowrap"
+                        >
+                          {topic}
+                        </li>
+                      )
+                    })}
                   </ul>
                   <div className="mt-2 flex items-center justify-end md:group-even:justify-start gap-2 leading-[0]">
                     {work.github && (
