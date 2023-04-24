@@ -11,7 +11,7 @@ export function Apresentacao() {
       </div>
       <div className="mt-1 fade-down opacity-0 animation-delay-1000">
         <h3 className="text-text-dark text-title-40-80 leading-none font-semibold">
-          Sou desenvolvedor web Front-end.
+          Desenvolvedor web Front-end.
         </h3>
       </div>
       <div className="mt-5 fade-down opacity-0 animation-delay-1200">
