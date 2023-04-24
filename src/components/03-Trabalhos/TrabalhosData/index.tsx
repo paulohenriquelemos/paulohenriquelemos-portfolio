@@ -8,7 +8,7 @@ export const trabalhosData = [
       'O projeto consistiu em migrar o site existente em html para ReactJS, utilizando o mínimo possível de plugins do WordPress. Foi bastante desafiador, mas muito gratificante finalizar o front-end e ajudar com as requisições via API do WordPress.',
     image: imageBlogIsca,
     link: 'https://blogiscaecompanhia.com.br',
-    topics: ['React', 'WordPress', 'API'],
+    topics: ['Reactjs', 'WordPress', 'API'],
     github: '',
   },
 ]
