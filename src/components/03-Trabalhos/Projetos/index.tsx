@@ -7,6 +7,7 @@ import { api } from '../../../lib/axios'
 
 import { formatTitle } from '../../../utils/format-title'
 import { LordIcon } from '../../LordIcon'
+import { Loader } from '../../Loader'
 
 interface Repository {
   id: number
@@ -30,7 +31,7 @@ export function Projetos() {
   }, [])
 
   if (!repositories) {
-    return <div>Espere</div>
+    return <Loader />
   }
 
   return (
