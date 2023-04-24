@@ -89,21 +89,6 @@ export function ListaProjetos() {
           <tbody className="cursor-default">
             {repositories.map((repository: Repository) => {
               if (repository.name === 'paulohenriquelemos') return null
-
-              // const url = `https://raw.githubusercontent.com/paulohenriquelemos/${repository.name}/main/src/assets/layout.png`
-              // const request = new XMLHttpRequest()
-              // request.open('GET', url, true)
-              // // request.send()
-              // request.onreadystatechange = function () {
-              //   // const status = request.status
-              //   if (request.status === 200) {
-              //     // if(statusText == OK)
-              //     console.log('image exists')
-              //   } else {
-              //     console.log("image doesn't exist")
-              //   }
-              // }
-              // request.send()
               return (
                 <tr
                   key={repository.id}
