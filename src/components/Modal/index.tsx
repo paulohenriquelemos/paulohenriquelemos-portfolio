@@ -3,6 +3,8 @@ import { HashLink } from 'react-router-hash-link'
 import { IoMdClose } from 'react-icons/io'
 import * as Dialog from '@radix-ui/react-dialog'
 
+import curriculo from '../../assets/curriculo-paulo.pdf'
+
 export function Modal() {
   const [open, setOpen] = useState(false)
 
@@ -62,8 +64,9 @@ export function Modal() {
               </li>
             </ol>
             <a
-              href="/src/assets/curriculo-paulo.pdf"
+              href={curriculo}
               target="_blank"
+              rel="noopener noreferrer"
               className="text-primary text-sm rounded bg-transparent hover:bg-primaryHover transition duration-200 border border-primary py-3 px-4 mt-9"
             >
               Currículo

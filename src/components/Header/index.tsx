@@ -3,6 +3,8 @@ import { HashLink } from 'react-router-hash-link'
 
 import { Modal } from '../Modal'
 
+import curriculo from '../../assets/curriculo-paulo.pdf'
+
 export function Header() {
   const [scrollSitation, setScrollSituation] = useState(true)
   const [shadowScroll, setShadowScroll] = useState('')
@@ -100,8 +102,9 @@ export function Header() {
           </ol>
           <div className="fade-down opacity-0 animation-delay-400">
             <a
-              href="/src/assets/curriculo-paulo.pdf"
+              href={curriculo}
               target="_blank"
+              rel="noopener noreferrer"
               className="text-primary text-sm rounded bg-transparent hover:bg-primaryHover transition duration-200 border border-primary py-3 px-4 ml-4"
             >
               Currículo
